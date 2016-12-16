@@ -3,7 +3,7 @@ ghq_root: "{{ ansible_user_dir }}/.ghq/github.com"
 zsh_completion_dir: "{{ ansible_user_dir }}/.zsh.d/completions"
 
 git_repositories:
-  - { repo: "https://github.com/registak/dotfiles.git", dest: "{{ ghq_root }}/registakm/dotfiles" }
+  - { repo: "https://github.com/registak/dotfiles.git", dest: "{{ ghq_root }}/registak/dotfiles" }
   - { repo: "https://github.com/tmux-plugins/tpm.git", dest: "{{ ansible_user_dir }}/.tmux/plugins/tpm" }
   - { repo: "https://github.com/drduh/pwd.sh.git", dest: "{{ ghq_root }}/drduh/pwd.sh" }
   - { repo: "https;//github.com/aws/aws-cli.git", dest: "{{ ghq_root }}/aws/aws-cli" }
