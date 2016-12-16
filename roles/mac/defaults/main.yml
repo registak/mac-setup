@@ -1,0 +1,53 @@
+---
+osx_defaults:
+  - domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: true
+    notify: "Restart Dock"
+
+  - domain: com.apple.dock
+    key: autohide-delay
+    type: float
+    value: 0
+    notify: "Restart Dock"
+
+  - domain: NSGlobalDomain
+    key: AppleShowAllExtensions
+    type: bool
+    value: true
+    notify: "Restart Finder"
+
+  - domain: com.apple.finder
+    key: AppleShowAllFiles
+    type: bool
+    value: true
+    notify: "Restart Finder"
+
+  - domain: com.apple.finder
+    key: ShowPathBar
+    type: bool
+    value: true
+    notify: "Restart Finder"
+
+  - domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    type: bool
+    value: true
+    notify: "Restart Finder"
+
+  - domain: com.apple.finder
+    key: AppleShowAllFiles
+    type: bool
+    value: true
+    notify: "Restart Finder"
+
+  - domain: NSGlobalDomain
+    key: InitialKeyRepeat
+    type: int
+    value: 15
+
+  - domain: NSGlobalDomain
+    key: KeyRepeat
+    type: int
+    value: 2

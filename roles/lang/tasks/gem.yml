@@ -1,0 +1,27 @@
+---
+- name: Install Ruby via rbenv
+  shell: |
+    bash -cl 'rbenv install "{{ ruby_version }}"'
+  args:
+    creates: "~/.rbenv/versions/{{ ruby_version }}/bin/ruby"
+
+- name: Check if Ruby version is "{{ ruby_version }}"
+  shell: |
+    bash -cl 'rbenv versions' | grep -F "* {{ ruby_version }}"
+  register: res
+  always_run: yes
+  failed_when: no
+  changed_when: res.rc != 0
+  notify:
+    - Change Ruby version
+
+- name: Flush handlers
+  meta: flush_handlers
+
+- name: Install gem pacakges
+  gem:
+    name: "{{ item.name }}"
+    include_doc: yes
+    state: "{{ item.state | default('latest') }}"
+  with_items:
+    - "{{ gem_packages }}"

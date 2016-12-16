@@ -1,0 +1,31 @@
+---
+# - name: Check if iterm2 config is differ
+#   shell: |
+#     diff <(plutil -convert binary1 -o - ./com.googlecode.iterm2.plist | md5 -q) <(md5 -q ~/Library/Preferences/com.googlecode.iterm2.plist)
+#   args:
+#     chdir: roles/mac/files/Library/Preferences
+#     executable: /bin/bash
+#   register: diff_result
+#   always_run: true
+#   failed_when: false
+#   changed_when: diff_result.rc != 0
+#   notify:
+#     - Restore iterm2 configuration
+
+- name: Install ricty fonts
+  shell: |
+    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts && fc-cache -vf
+  args:
+    creates: "{{ ansible_user_dir }}/Library/Fonts/Ricty-Bold.ttf"
+
+- name: Setup OS X defaults
+  osx_defaults:
+    domain: "{{ item.domain }}"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+    state: present
+  notify:
+    - "{{ item.notify | default(omit) }}"
+  with_items:
+    - "{{ osx_defaults }}"

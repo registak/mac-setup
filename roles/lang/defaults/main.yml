@@ -1,0 +1,12 @@
+---
+gem_packages:
+  - { name: bundler }
+  - { name: pry }
+
+npm_packages:
+  - { name: serverless }
+  - { name: nodemon }
+
+pip_packages:
+  - { name: ansible }
+  - { name: awscli }

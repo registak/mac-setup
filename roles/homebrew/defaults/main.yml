@@ -1,0 +1,88 @@
+---
+homebrew_taps:
+  - { tap: caskroom/cask }
+  - { tap: homebrew/binary }
+  - { tap: homebrew/dupes }
+  - { tap: caskroom/fonts }
+  - { tap: caskroom/versions }
+  - { tap: sanemat/font }
+  - { tap: bfontaine/utils }
+
+homebrew_cask_packages:
+  - { name: iterm2 }
+  - { name: firefox }
+  - { name: google-chrome }
+  - { name: google-chrome-canary }
+  - { name: google-japanese-ime }
+  - { name: java }
+  - { name: docker }
+  - { name: vagrant }
+  - { name: virtualbox }
+  - { name: kindle }
+  - { name: xquartz }
+  - { name: atom }
+  - { name: sublime-text }
+  - { name: alfred }
+  - { name: slack }
+  - { name: bettertouchtool }
+  - { name: dropbox }
+  - { name: spotify }
+  - { name: evernote }
+  - { name: the-unarchiver }
+  - { name: flux }
+  - { name: onyx }
+  - { name: tunnelbear }
+  - { name: clipy }
+
+
+
+homebrew_packages:
+  - { name: brew-cask }
+  - { name: ghq }
+  - { name: pcre }
+  - { name: libxml2 }
+  - { name: glib }
+  - { name: fontconfig }
+  - { name: readline }
+  - { name: openssl }
+  - { name: python }
+  - { name: python3 }
+  - { name: coreutils }
+  - { name: git }
+  - { name: git-secrets }
+  - { name: zsh }
+  - { name: zsh-completions }
+  - { name: zsh-syntax-highlighting }
+  - { name: wget }
+  - { name: curl }
+  - { name: cmake }
+  - { name: autoconf }
+  - { name: automake }
+  - { name: pkg-config }
+  - { name: ctags }
+  - { name: tree }
+  - { name: jq }
+  - { name: go }
+  - { name: direnv }
+  - { name: peco }
+  - { name: hub }
+  - { name: rbenv }
+  - { name: ruby-build }
+  - { name: rbenv-binstubs }
+  - { name: tmux }
+  - { name: reattach-to-user-namespace }
+  - { name: pyenv }
+  - { name: pyenv-virtualenv }
+  - { name: mobile-shell }
+  - { name: ricty }
+  - { name: nodebrew }
+  - { name: fpp }
+  - { name: bash }
+  - { name: mas }
+  - { name: jo }
+  - { name: redpen }
+  - { name: ffmpeg }
+  - { name: terraform }
+  - { name: packer }
+  - { name: consul }
+  - { name: vault }
