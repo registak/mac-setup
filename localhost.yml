@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   roles:
-    - { role: homebrew, tags: [ homebre ] }
-    - { role: env,      tags: [ env ] }
+    # - { role: homebrew, tags: [ homebrew ] }
+    # - { role: env,      tags: [ env ] }
     - { role: mac,      tags: [ mac ] }
-    - { role: lang,     tags: [ lang ] }
+    # - { role: lang,     tags: [ lang ] }

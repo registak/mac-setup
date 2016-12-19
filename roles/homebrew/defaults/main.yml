@@ -33,11 +33,11 @@ homebrew_cask_packages:
   - { name: onyx }
   - { name: tunnelbear }
   - { name: clipy }
-
-
+  - { name: bartender }
+  - { name: appcleaner }
+  - { name: caffeine }
 
 homebrew_packages:
-  - { name: brew-cask }
   - { name: ghq }
   - { name: pcre }
   - { name: libxml2 }
@@ -86,3 +86,4 @@ homebrew_packages:
   - { name: packer }
   - { name: consul }
   - { name: vault }
+  - { name: gpg }

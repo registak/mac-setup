@@ -7,6 +7,12 @@ osx_defaults:
     notify: "Restart Dock"
 
   - domain: com.apple.dock
+    key: orientation
+    type: string
+    value: left
+    notify: "Restart Dock"
+
+  - domain: com.apple.dock
     key: autohide-delay
     type: float
     value: 0
@@ -20,7 +26,8 @@ osx_defaults:
 
   - domain: com.apple.finder
     key: AppleShowAllFiles
-    type: bool
+    # TODO https://github.com/ansible/ansible-modules-extras/issues/3427
+    type: string
     value: true
     notify: "Restart Finder"
 
@@ -32,13 +39,8 @@ osx_defaults:
 
   - domain: com.apple.desktopservices
     key: DSDontWriteNetworkStores
-    type: bool
-    value: true
-    notify: "Restart Finder"
-
-  - domain: com.apple.finder
-    key: AppleShowAllFiles
-    type: bool
+    # TODO https://github.com/ansible/ansible-modules-extras/issues/3427
+    type: string
     value: true
     notify: "Restart Finder"
 

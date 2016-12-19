@@ -1,11 +1,15 @@
 ---
+- name: setup nodebrew
+  shell: |
+    bash -cl 'nodebrew setup'
+
 - name: Install Nodejs via nodebrew
   shell: |
     bash -cl 'nodebrew install-binary "{{ nodejs_version }}"'
 
 - name: Check if Nodejs version is "{{ nodejs_version }}"
   shell: |
-    bash -cl 'ndoebrew ls' | grep -F "{{ nodejs_version }}"
+    bash -cl 'nodebrew ls' | grep -F "{{ nodejs_version }}"
   register: res
   always_run: yes
   failed_when: no
