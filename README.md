@@ -33,6 +33,7 @@
   $ pyenv global <python-version>
   ```
 6. setup osx with ansible
+
   ```bash
   $ cd ~/path/to/mac-setup
   $ pip install -r requirements.txt
