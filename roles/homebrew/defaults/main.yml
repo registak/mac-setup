@@ -37,6 +37,7 @@ homebrew_cask_packages:
   - { name: appcleaner }
   - { name: caffeine }
   - { name: gyazo }
+  - { name: slicy }
 
 homebrew_packages:
   - { name: ghq }
