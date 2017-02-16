@@ -16,6 +16,7 @@ homebrew_cask_packages:
   - { name: google-japanese-ime }
   - { name: java }
   - { name: docker }
+  - { name: kitematic }
   - { name: vagrant }
   - { name: virtualbox }
   - { name: kindle }
@@ -26,6 +27,7 @@ homebrew_cask_packages:
   - { name: slack }
   - { name: bettertouchtool }
   - { name: dropbox }
+  - { name: google-drive }
   - { name: spotify }
   - { name: evernote }
   - { name: the-unarchiver }
@@ -38,6 +40,10 @@ homebrew_cask_packages:
   - { name: caffeine }
   - { name: gyazo }
   - { name: slicy }
+  - { name: intellij-idea }
+  - { name: sourcetree }
+  - { name: coderunner }
+  - { name: font-fira-code }
 
 homebrew_packages:
   - { name: ghq }
@@ -68,6 +74,7 @@ homebrew_packages:
   - { name: direnv }
   - { name: peco }
   - { name: hub }
+  - { name: mysql }
   - { name: rbenv }
   - { name: ruby-build }
   - { name: rbenv-binstubs }
@@ -76,7 +83,6 @@ homebrew_packages:
   - { name: pyenv }
   - { name: pyenv-virtualenv }
   - { name: mobile-shell }
-  - { name: ricty }
   - { name: nodebrew }
   - { name: fpp }
   - { name: bash }
