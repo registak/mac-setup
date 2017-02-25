@@ -72,10 +72,12 @@ homebrew_packages:
   - { name: tree }
   - { name: jq }
   - { name: go }
+  - { name: perl }
   - { name: direnv }
   - { name: peco }
   - { name: hub }
   - { name: mysql }
+  - { name: mongodb }
   - { name: rbenv }
   - { name: ruby-build }
   - { name: rbenv-binstubs }
@@ -96,3 +98,4 @@ homebrew_packages:
   - { name: consul }
   - { name: vault }
   - { name: gpg }
+  - { name: yarn }
