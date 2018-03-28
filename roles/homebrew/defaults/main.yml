@@ -22,7 +22,6 @@ homebrew_cask_packages:
   - { name: kindle }
   - { name: xquartz }
   - { name: atom }
-  - { name: sublime-text }
   - { name: alfred }
   - { name: slack }
   - { name: bettertouchtool }
@@ -31,7 +30,6 @@ homebrew_cask_packages:
   - { name: spotify }
   - { name: evernote }
   - { name: the-unarchiver }
-  - { name: flux }
   - { name: onyx }
   - { name: tunnelbear }
   - { name: clipy }
@@ -44,6 +42,8 @@ homebrew_cask_packages:
   - { name: sourcetree }
   - { name: coderunner }
   - { name: font-fira-code }
+  - { name: station }
+  - { name: notion }
 
 homebrew_packages:
   - { name: ghq }
@@ -84,7 +84,6 @@ homebrew_packages:
   - { name: reattach-to-user-namespace }
   - { name: pyenv }
   - { name: pyenv-virtualenv }
-  - { name: mobile-shell }
   - { name: nodebrew }
   - { name: fpp }
   - { name: bash }
@@ -98,3 +97,4 @@ homebrew_packages:
   - { name: vault }
   - { name: gpg }
   - { name: yarn }
+  - { name: the_silver_searcher }
